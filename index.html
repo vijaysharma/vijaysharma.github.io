@@ -1,1 +1,37 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Recipe API</title>
+	<meta name="theme-color" content="#3367D6">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https:127.0.0.1:8080"/>
+	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" href="/images/logo-512.png">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/Loader.css">
+	<script type="module" src="main.js"></script>
+</head>
+<body>
+	<header>
+		<img src="./images/logo.png" alt="Recipe" />
+	</header>
+	<div id="search">
+		<label for="searchField" aria-label="Search Recipes">
+			<input id="searchField" type="text" name="" value="" placeholder="Search Recipe" />
+		</label>
+		<button type="button" name="button">Search</button>
+	</div>
+	<div id="root" class="recipe"></div>
+	<script>
+		window.addEventListener('load', () => {
+			if(navigator.serviceWorker) {
+				navigator.serviceWorker.register('./sw.js');
+			} else {
+				console.log('This site will not work on your current browser. Please Update.')
+			}
+		})
+
+	</script>
+</body>
+</html>

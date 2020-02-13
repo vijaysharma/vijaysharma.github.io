@@ -1,0 +1,56 @@
+header {
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.recipe .lds-grid {
+	transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.recipe-item {
+	min-width: 350px;
+	max-width: 23%;
+	height: 600px;
+	max-height: 600px;
+	box-sizing: border-box;
+	box-shadow: 0 0 2px 0 #ccc;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+}
+.recipe-item > h2 {
+	margin: 10px 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.recipe-item > ul {
+	height: 200px;
+	overflow: auto;
+}
+.recipe-item > img {
+	height: 300px;
+	max-width: 100%;
+}
+
+#search {
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 20px
+}
+#search > button {
+	border: 1px solid #aaa;
+background: #444;
+padding: 10px;
+color: #fff;
+box-shadow: 1px 1px 0px 0 #666;
+}
+
+#searchField {
+	padding: 10px;
+    min-width: 70%;
+}
